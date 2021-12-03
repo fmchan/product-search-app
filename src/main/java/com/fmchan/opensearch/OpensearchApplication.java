@@ -39,10 +39,10 @@ public class OpensearchApplication {
 		SpringApplication.run(OpensearchApplication.class, args);
 	}
 	
-	@PreDestroy
+	/*@PreDestroy
 	public void deleteIndex() {
 		esOps.indexOps(Product.class).delete();
-	}
+	}*/
 	
 	
 	@PostConstruct
@@ -84,7 +84,6 @@ public class OpensearchApplication {
 				String manufacturer = rowScanner.next();
 				String name = rowScanner.next();
 				String description = rowScanner.next();
-				log.info("manufacturer:"+manufacturer);
 				return Optional.of(
 						Product.builder()
 						.name(name)

@@ -24,6 +24,8 @@ public class ElasticsearchClientConfig extends AbstractElasticsearchConfiguratio
 				ClientConfiguration
 				.builder()
 				.connectedTo("localhost:1200")
+				//.usingSsl()
+				//.withBasicAuth("admin", "admin")
 				.build();
 
 		return RestClients
