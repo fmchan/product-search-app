@@ -1,0 +1,6 @@
+spring:
+  elasticsearch:
+    uris: http://search-engine-lb-751929431.ap-east-1.elb.amazonaws.com:9200
+    #uris: http://localhost:1200
+    #username: elastic
+    #assword: abc123
